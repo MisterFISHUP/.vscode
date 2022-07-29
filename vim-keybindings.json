@@ -1,0 +1,202 @@
+{
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["<leader>", "1"],
+      "after": ["1", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "2"],
+      "after": ["2", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "3"],
+      "after": ["3", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "4"],
+      "after": ["4", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "5"],
+      "after": ["5", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "6"],
+      "after": ["6", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "7"],
+      "after": ["7", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "8"],
+      "after": ["8", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "9"],
+      "after": ["9", "g", "t"]
+    },
+    {
+      "before": ["<leader>", "0"],
+      "commands": [":tablast"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": [":tabprev"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": ["c", "i", "w", "<C-r>", "0", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": [":split"]
+    },
+    {
+      "before": ["<leader>", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["<leader>", "t", "n"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<leader>", "t", "h"],
+      "commands": [":tabmove -1"]
+    },
+    {
+      "before": ["<leader>", "t", "l"],
+      "commands": [":tabmove +1"]
+    },
+    {
+      "before": ["<leader>", "t", "c"],
+      "commands": [":tabclose"]
+    },
+    {
+      "before": ["<leader>", "t", "o"],
+      "commands": [":tabonly"]
+    },
+    {
+      "before": ["<leader>", "t", "1"],
+      "commands": [":tabmove 0"]
+    },
+    {
+      "before": ["<leader>", "t", "2"],
+      "commands": [":tabmove 1"]
+    },
+    {
+      "before": ["<leader>", "t", "3"],
+      "commands": [":tabmove 2"]
+    },
+    {
+      "before": ["<leader>", "t", "4"],
+      "commands": [":tabmove 3"]
+    },
+    {
+      "before": ["<leader>", "t", "5"],
+      "commands": [":tabmove 4"]
+    },
+    {
+      "before": ["<leader>", "t", "6"],
+      "commands": [":tabmove 5"]
+    },
+    {
+      "before": ["<leader>", "t", "7"],
+      "commands": [":tabmove 6"]
+    },
+    {
+      "before": ["<leader>", "t", "8"],
+      "commands": [":tabmove 7"]
+    },
+    {
+      "before": ["<leader>", "t", "9"],
+      "commands": [":tabmove 8"]
+    },
+    {
+      "before": ["<leader>", "t", "0"],
+      "commands": [":tabmove"]
+    },
+    {
+      "before": ["<leader>", "w", "c"],
+      "commands": [":close"]
+    },
+    {
+      "before": ["<leader>", "w", "o"],
+      "commands": [":only"]
+    },
+    {
+      "before": ["<leader>", "w", "t"],
+      "after": ["<C-w>", "T"]
+    },
+    {
+      "before": ["<C-Left>"],
+      "after": ["<C-w>", "<"]
+    },
+    {
+      "before": ["<C-Right>", "w", "l"],
+      "after": ["<C-w>", ">"]
+    },
+    {
+      "before": ["<C-Down>"],
+      "after": ["<C-w>", "-"]
+    },
+    {
+      "before": ["<C-Up>"],
+      "after": ["<C-w>", "+"]
+    },
+    {
+      "before": ["<leader>", "w", "K"],
+      "commands": [":vertical res"]
+    },
+    {
+      "before": ["<leader>", "w", "L"],
+      "commands": [":res"]
+    },
+    {
+      "before": ["<leader>", "w", "="],
+      "after": ["<C-w>", "="]
+    }
+  ]
+}
