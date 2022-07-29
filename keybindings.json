@@ -1,0 +1,113 @@
+[
+  // ===== Nerdtree =====
+  {
+    // open tree
+    "key": "space e",
+    "command": "workbench.view.explorer",
+    "when": "vim.active && !editorIsOpen && !terminalFocus"
+  },
+  {
+    // close tree when in tree
+    "key": "q",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    // jump to current nodes parent
+    "key": "m",
+    "command": "list.focusParent",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus "
+  },
+  {
+    // scroll up tree
+    "key": "ctrl+u",
+    "command": "list.scrollUp",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // scroll down tree
+    "key": "ctrl+d",
+    "command": "list.scrollDown",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // note:
+  // o: toggle folder / open file preserver focus
+  // l: toggle folder / open file go into file
+  {
+    // open file in split
+    "key": "v",
+    "command": "explorer.openToSide",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // add new file
+    "key": "i",
+    "command": "explorer.newFile",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+
+  {
+    // add new folder
+    "key": "shift+i",
+    "command": "explorer.newFolder",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // refresh tree
+    "key": "ctrl+r",
+    "command": "workbench.files.action.refreshFilesExplorer",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // rename file or folder
+    "key": "r",
+    "command": "renameFile",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // delete file or folder
+    "key": "d",
+    "command": "deleteFile",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // cut file or folder
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // copy file or folder
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    // past file or folder
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  // ===== suggestion (intellisense) =====
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "vim.active && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "vim.active && suggestWidgetVisible"
+  },
+  // ===== quick open select (quick open = ctrl+p) =====
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "vim.active && inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "vim.active && inQuickOpen"
+  }
+]
