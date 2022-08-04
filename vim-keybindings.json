@@ -175,7 +175,7 @@
       "after": ["<C-w>", "<"]
     },
     {
-      "before": ["<C-Right>", "w", "l"],
+      "before": ["<C-Right>"],
       "after": ["<C-w>", ">"]
     },
     {
