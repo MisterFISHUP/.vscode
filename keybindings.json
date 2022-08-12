@@ -109,5 +109,11 @@
     "key": "ctrl+k",
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "vim.active && inQuickOpen"
+  },
+  // ===== for vs code in browser =====
+    {
+    "key": "alt+.",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   }
 ]
