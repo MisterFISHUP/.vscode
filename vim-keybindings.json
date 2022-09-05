@@ -19,6 +19,10 @@
       "commands": ["workbench.action.toggleZenMode"]
     },
     {
+      "before": ["<leader>", "k"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
       "before": ["<C-h>"],
       "after": ["<C-w>", "h"]
     },
@@ -197,6 +201,23 @@
     {
       "before": ["<leader>", "w", "="],
       "after": ["<C-w>", "="]
-    }
+    },
+    {
+      "before": ["<leader>", "t", "p"],
+      "commands": ["workbench.action.pinEditor"]
+    },
+    {
+      // remove when there is togglePinEditor
+      "before": ["<leader>", "t", "u"],
+      "commands": ["workbench.action.unpinEditor"]
+    },
+    {
+      "before": ["[", "g"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "g"],
+      "commands": ["editor.action.marker.next"]
+    },
   ]
 }
