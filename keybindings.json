@@ -92,12 +92,23 @@
   {
     "key": "ctrl+j",
     "command": "selectNextSuggestion",
-    "when": "vim.active && suggestWidgetVisible"
+    "when": "suggestWidgetVisible"
   },
   {
     "key": "ctrl+k",
     "command": "selectPrevSuggestion",
-    "when": "vim.active && suggestWidgetVisible"
+    "when": "suggestWidgetVisible"
+  },
+  // ===== code action =====
+  {
+    "key": "ctrl+j",
+    "command": "focusNextCodeAction",
+    "when": "CodeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "focusPreviousCodeAction",
+    "when": "CodeActionMenuVisible"
   },
   // ===== quick open select (quick open = ctrl+p) =====
   {
@@ -110,8 +121,8 @@
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "vim.active && inQuickOpen"
   },
-  // ===== for vs code in browser =====
-    {
+  // ===== for vs code in browser =====	
+  {	
     "key": "alt+.",
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
