@@ -102,13 +102,13 @@
   // ===== code action =====
   {
     "key": "ctrl+j",
-    "command": "focusNextCodeAction",
-    "when": "CodeActionMenuVisible"
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
   },
   {
     "key": "ctrl+k",
-    "command": "focusPreviousCodeAction",
-    "when": "CodeActionMenuVisible"
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
   },
   // ===== quick open select (quick open = ctrl+p) =====
   {
@@ -121,8 +121,13 @@
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "vim.active && inQuickOpen"
   },
-  // ===== for vs code in browser =====	
-  {	
+  // ===== rebind quick fix =====
+  {
+    "key": "ctrl+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
     "key": "alt+.",
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
