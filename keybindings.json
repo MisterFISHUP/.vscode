@@ -10,7 +10,7 @@
     // close tree when in tree
     "key": "q",
     "command": "workbench.action.toggleSidebarVisibility",
-    "when": "vim.active && explorerViewletVisible && filesExplorerFocus"
+    "when": "vim.active && explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
     // jump to current nodes parent
