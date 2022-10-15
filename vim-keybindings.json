@@ -17,6 +17,19 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["\\", "a"],
+      "commands": ["workbench.action.toggleActivityBarVisibility"]
+    },
+    {
+      "before": ["\\", "m"],
+      "commands": ["workbench.action.toggleMenuBar"]
+      // You can still access the menu bar by pressing the Alt-key.
+    },
+    {
+      "before": ["\\", "s"],
+      "commands": ["workbench.action.toggleStatusbarVisibility"]
+    },
+    {
       "before": ["<C-n>"],
       "commands": [":nohl"]
     },
